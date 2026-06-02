@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>निधि फाइनेंस सर्विस – सभी बैंकों द्वारा सभी प्रकार के लोन, रायपुर छत्तीसगढ़</title>
+  <meta name="description" content="निधि फाइनेंस सर्विस – सभी बैंकों द्वारा होम लोन, मॉर्गेज लोन, प्लॉट लोन, कंस्ट्रक्शन लोन, प्रोजेक्ट लोन, पर्सनल लोन, बिजनेस लोन और अधिक।">
+  <meta name="keywords" content="निधि फाइनेंस, लोन रायपुर, होम लोन, पर्सनल लोन, बिजनेस लोन, फाइनेंस कंपनी छत्तीसगढ़">
+  <meta name="author" content="निधि फाइनेंस सर्विस">
+  <link rel="canonical" href="https://nidhifinance.in/">
+  <meta property="og:title" content="निधि फाइनेंस सर्विस – सभी बैंकों द्वारा सभी प्रकार के लोन">
+  <meta property="og:description" content="सभी बैंकों द्वारा होम लोन, मॉर्गेज लोन, प्लॉट लोन, कंस्ट्रक्शन लोन, प्रोजेक्ट लोन और अधिक।">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#060d1a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Tiro Devanagari Hindi','Inter',sans-serif;
+      background:#060d1a;
+      color:#c8d0dc;
+      overflow-x:hidden;
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+    }
+    :root{
+      --navy:#060d1a;
+      --navy-2:#0a1528;
+      --navy-3:#0f1d36;
+      --gold:#c9a84c;
+      --gold-2:#dbb95a;
+      --gold-3:#a88830;
+      --gold-light:#f0dfa0;
+      --white:#ffffff;
+      --off-white:#e8edf4;
+      --muted:#7a8aa0;
+      --muted-2:#94a8c0;
+      --glass:rgba(255,255,255,0.04);
+      --glass-2:rgba(255,255,255,0.07);
+      --glass-border:rgba(255,255,255,0.07);
+      --glass-border-2:rgba(255,255,255,0.12);
+      --shadow:0 8px 40px rgba(0,0,0,0.4);
+      --shadow-gold:0 4px 24px rgba(201,168,76,0.2);
+      --radius-sm:10px;
+      --radius-md:16px;
+      --radius-lg:24px;
+      --ease:cubic-bezier(.25,.46,.45,.94);
+      --ease-bounce:cubic-bezier(.34,1.56,.64,1);
+      --ease-out:cubic-bezier(0,.55,.45,1);
+    }
+    a{text-decoration:none;color:inherit}
+    ul{list-style:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1200px;margin:0 auto;padding:0 24px}
+    img{width:100%;border-radius:var(--radius-md);object-fit:cover}
+
+    /* preloader */
+    #preloader{
+      position:fixed;inset:0;z-index:99999;
+      background:#060d1a;
+      display:flex;align-items:center;justify-content:center;
+      flex-direction:column;gap:24px;
+      transition:opacity .7s,visibility .7s
+    }
+    #preloader.hide{opacity:0;visibility:hidden;pointer-events:none}
+    .loader-symbol{position:relative;width:70px;height:70px}
+    .loader-ring{
+      position:absolute;inset:0;border-radius:50%;
+      border:3px solid rgba(201,168,76,.08);
+      border-top-color:var(--gold);
+      animation:spin .8s linear infinite
+    }
+    .loader-ring:nth-child(2){
+      inset:10px;border-width:2px;
+      animation-direction:reverse;
+      animation-duration:1.2s;
+      border-top-color:var(--gold-2)
+    }
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .loader-text{
+      font-size:13px;letter-spacing:6px;
+      color:var(--gold);text-transform:uppercase;font-weight:500
+    }
+    .loader-bar{
+      width:160px;height:2px;border-radius:4px;
+      background:rgba(255,255,255,.05);overflow:hidden
+    }
+    .loader-bar-inner{
+      height:100%;width:0;border-radius:4px;
+      background:linear-gradient(90deg,var(--gold-3),var(--gold),var(--gold-2));
+      animation:loadBar 2s ease-in-out forwards
+    }
+    @keyframes loadBar{0%{width:0}100%{width:100%}}
+
+    /* scroll progress */
+    #scrollProgress{
+      position:fixed;top:0;left:0;height:3px;
+      background:linear-gradient(90deg,var(--gold-3),var(--gold),var(--gold-2));
+      z-index:99998;width:0;transition:width .1s linear
+    }
+
+    /* navbar */
+    .navbar{
+      position:fixed;top:0;left:0;right:0;z-index:9997;
+      padding:18px 0;
+      transition:all .5s var(--ease)
+    }
+    .navbar.scrolled{
+      background:rgba(6,13,26,.88);
+      backdrop-filter:blur(28px) saturate(1.2);
+      -webkit-backdrop-filter:blur(28px) saturate(1.2);
+      border-bottom:1px solid var(--glass-border);
+      padding:10px 0
+    }
+    .navbar .container{display:flex;align-items:center;justify-content:space-between}
+    .nav-logo{
+      display:flex;align-items:center;gap:10px;
+      font-family:'Tiro Devanagari Hindi',serif;
+      font-size:22px;font-weight:700;
+      color:var(--white)
+    }
+    .nav-logo span{color:var(--gold)}
+    .nav-links{display:flex;align-items:center;gap:4px}
+    .nav-links a{
+      padding:8px 18px;border-radius:8px;
+      font-size:14px;font-weight:500;
+      color:var(--muted-2);position:relative;
+      transition:all .3s var(--ease)
+    }
+    .nav-links a::after{
+      content:'';position:absolute;bottom:2px;left:50%;transform:translateX(-50%)scaleX(0);
+      width:60%;height:2px;border-radius:4px;
+      background:var(--gold);
+      transition:transform .3s var(--ease)
+    }
+    .nav-links a:hover::after,.nav-links a.active::after{transform:translateX(-50%)scaleX(1)}
+    .nav-links a:hover,.nav-links a.active{color:var(--gold)}
+    .nav-cta{
+      padding:10px 20px!important;border-radius:10px!important;
+      background:linear-gradient(135deg,var(--gold-3),var(--gold))!important;
+      color:var(--navy)!important;font-weight:700!important;
+      font-size:13px!important;margin-left:8px;
+      box-shadow:0 4px 20px rgba(201,168,76,.25);
+      transition:all .3s var(--ease)!important
+    }
+    .nav-cta::after{display:none!important}
+    .nav-cta:hover{transform:translateY(-2px)!important;box-shadow:0 8px 30px rgba(201,168,76,.35)!important}
+    .nav-toggle{
+      display:none;flex-direction:column;cursor:pointer;
+      background:none;border:none;padding:6px;z-index:9999;
+      gap:5px;
+      -webkit-tap-highlight-color:transparent
+    }
+    .nav-toggle span{
+      display:block;width:26px;height:2.5px;
+      background:var(--white);border-radius:4px;
+      transition:all .35s var(--ease);
+      transform-origin:center
+    }
+    .nav-toggle.active span:nth-child(1){transform:rotate(45deg)translate(5px,5px)}
+    .nav-toggle.active span:nth-child(2){opacity:0;transform:translateX(-12px)}
+    .nav-toggle.active span:nth-child(3){transform:rotate(-45deg)translate(5px,-5px)}
+    .nav-overlay{
+      position:fixed;inset:0;z-index:9996;
+      background:rgba(0,0,0,.6);
+      backdrop-filter:blur(4px);
+      opacity:0;visibility:hidden;
+      transition:all .4s var(--ease)
+    }
+    .nav-overlay.open{opacity:1;visibility:visible}
+
+    /* hero */
+    .hero{
+      min-height:100vh;display:flex;align-items:center;
+      position:relative;overflow:hidden;
+      padding:120px 0 60px
+    }
+    .hero-canvas{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+    .hero-glow{
+      position:absolute;border-radius:50%;filter:blur(100px);pointer-events:none
+    }
+    .hero-glow:nth-child(1){
+      width:600px;height:600px;
+      background:radial-gradient(circle,rgba(201,168,76,.12),transparent);
+      top:-20%;right:-10%;
+      animation:drift 18s ease-in-out infinite
+    }
+    .hero-glow:nth-child(2){
+      width:450px;height:450px;
+      background:radial-gradient(circle,rgba(37,99,235,.08),transparent);
+      bottom:-10%;left:-8%;
+      animation:drift 22s ease-in-out infinite reverse
+    }
+    .hero-glow:nth-child(3){
+      width:250px;height:250px;
+      background:radial-gradient(circle,rgba(201,168,76,.08),transparent);
+      top:45%;left:15%;
+      animation:drift 14s ease-in-out infinite 2s
+    }
+    @keyframes drift{
+      0%,100%{transform:translate(0,0)scale(1)}
+      25%{transform:translate(40px,-50px)scale(1.06)}
+      50%{transform:translate(-30px,30px)scale(.94)}
+      75%{transform:translate(20px,20px)scale(1.02)}
+    }
+    .hero-dots{
+      position:absolute;inset:0;
+      background-image:radial-gradient(rgba(255,255,255,.04)1px,transparent 1px);
+      background-size:48px 48px;
+      mask-image:radial-gradient(ellipse 70% 60% at 50% 50%,black 30%,transparent 70%);
+      -webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 50%,black 30%,transparent 70%)
+    }
+    .hero .container{position:relative;z-index:2;text-align:center}
+    .hero-badge{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:7px 18px;border-radius:50px;
+      background:rgba(201,168,76,.1);
+      border:1px solid rgba(201,168,76,.2);
+      font-size:12px;color:var(--gold-2);font-weight:500;
+      margin-bottom:28px;
+      animation:fadeSlideUp .6s .15s var(--ease) forwards
+    }
+    .hero h1{
+      font-family:'Tiro Devanagari Hindi',serif;
+      font-size:clamp(36px,5vw,56px);
+      line-height:1.15;
+      color:var(--white);
+      margin-bottom:12px;
+      animation:fadeSlideUp .6s .25s var(--ease) forwards
+    }
+    .hero h1 .glow-text{
+      background:linear-gradient(135deg,var(--gold),var(--gold-2),var(--gold-light));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text
+    }
+    .hero .sub-text{
+      font-size:18px;color:var(--muted-2);
+      margin-bottom:32px;
+      animation:fadeSlideUp .6s .35s var(--ease) forwards
+    }
+    @keyframes fadeSlideUp{to{transform:translateY(0);opacity:1}}
+
+    /* services layout */
+    .hero-services{
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      gap:20px;
+      align-items:center;
+      margin-bottom:36px;
+      animation:fadeSlideUp .6s .45s var(--ease) forwards
+    }
+    .hero-svc-list{
+      display:flex;flex-direction:column;gap:10px
+    }
+    .hero-svc-list.right{text-align:right}
+    .hero-svc-item{
+      display:flex;align-items:center;gap:12px;
+      padding:14px 20px;border-radius:12px;
+      background:var(--glass);
+      backdrop-filter:blur(12px);
+      border:1px solid var(--glass-border);
+      transition:all .3s var(--ease);
+      font-size:16px;font-weight:600;color:var(--white)
+    }
+    .hero-svc-list.right .hero-svc-item{flex-direction:row-reverse}
+    .hero-svc-item i{
+      width:40px;height:40px;border-radius:10px;flex-shrink:0;
+      background:rgba(201,168,76,.1);
+      display:flex;align-items:center;justify-content:center;
+      font-size:18px;color:var(--gold);
+      transition:all .3s
+    }
+    .hero-svc-item:hover{
+      border-color:rgba(201,168,76,.25);
+      transform:translateX(4px);
+      background:var(--glass-2)
+    }
+    .hero-svc-list.right .hero-svc-item:hover{transform:translateX(-4px)}
+    .hero-svc-item:hover i{
+      background:var(--gold);color:var(--navy)
+    }
+    .hero-center{
+      text-align:center;padding:0 10px
+    }
+    .hero-center .big-icon{
+      font-size:48px;color:var(--gold);opacity:.6;
+      margin-bottom:12px
+    }
+    .hero-center h2{
+      font-family:'Tiro Devanagari Hindi',serif;
+      font-size:clamp(20px,2.5vw,28px);
+      color:var(--white);line-height:1.4;
+      margin-bottom:8px
+    }
+    .hero-center .highlight-line{
+      display:inline-block;
+      background:linear-gradient(135deg,var(--gold-3),var(--gold));
+      color:var(--navy);
+      padding:2px 16px;border-radius:20px;
+      font-weight:700;font-size:14px
+    }
+
+    .hero-btns{
+      display:flex;flex-wrap:wrap;gap:12px;justify-content:center;
+      margin-bottom:24px;
+      animation:fadeSlideUp .6s .55s var(--ease) forwards
+    }
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:15px 30px;border-radius:12px;
+      font-size:15px;font-weight:600;cursor:pointer;border:none;
+      transition:all .35s var(--ease);
+      white-space:nowrap;
+      position:relative;overflow:hidden
+    }
+    .btn::after{
+      content:'';position:absolute;inset:0;border-radius:inherit;
+      background:linear-gradient(135deg,rgba(255,255,255,.15),transparent);
+      opacity:0;transition:opacity .4s
+    }
+    .btn:hover::after{opacity:1}
+    .btn-primary{
+      background:linear-gradient(135deg,var(--gold-3),var(--gold),var(--gold-2));
+      color:var(--navy);
+      box-shadow:0 4px 24px rgba(201,168,76,.3)
+    }
+    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 36px rgba(201,168,76,.4)}
+    .btn-secondary{
+      background:var(--glass-2);
+      color:var(--white);
+      border:1px solid var(--glass-border-2);
+      backdrop-filter:blur(10px)
+    }
+    .btn-secondary:hover{background:rgba(255,255,255,.1);transform:translateY(-3px)}
+    .btn-whatsapp{background:#25D366;color:white;box-shadow:0 4px 20px rgba(37,211,102,.3)}
+    .btn-whatsapp:hover{background:#1da851;transform:translateY(-3px);box-shadow:0 8px 30px rgba(37,211,102,.4)}
+
+    .hero-contact{
+      display:flex;justify-content:center;gap:24px;flex-wrap:wrap;
+      animation:fadeSlideUp .6s .65s var(--ease) forwards
+    }
+    .hero-contact a{
+      display:flex;align-items:center;gap:10px;
+      padding:12px 24px;border-radius:12px;
+      background:var(--glass);border:1px solid var(--glass-border);
+      color:var(--muted-2);font-size:15px;font-weight:600;
+      transition:all .3s
+    }
+    .hero-contact a:hover{
+      border-color:var(--gold);color:var(--gold);transform:translateY(-2px)
+    }
+    .hero-contact i{color:var(--gold);font-size:18px}
+
+    /* section */
+    section{padding:100px 0;position:relative}
+    .section-label{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:6px 18px;border-radius:50px;
+      background:rgba(201,168,76,.08);
+      border:1px solid rgba(201,168,76,.12);
+      color:var(--gold-2);
+      font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;
+      margin-bottom:18px
+    }
+    .section-title{
+      font-family:'Tiro Devanagari Hindi',serif;
+      font-size:clamp(28px,3.5vw,42px);
+      color:var(--white);line-height:1.15;
+      margin-bottom:14px
+    }
+    .section-sub{
+      color:var(--muted);font-size:16px;line-height:1.7;
+      max-width:620px;margin-bottom:50px
+    }
+    .text-center{text-align:center}
+    .text-center .section-sub{margin-left:auto;margin-right:auto}
+
+    .reveal{opacity:0;transform:translateY(50px);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out)}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .reveal-s{opacity:0;transform:scale(.92);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out)}
+    .reveal-s.visible{opacity:1;transform:scale(1)}
+
+    /* about */
+    .about{background:linear-gradient(180deg,var(--navy),var(--navy-2))}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    .about-visual{
+      border-radius:var(--radius-lg);
+      background:linear-gradient(145deg,rgba(201,168,76,.08),rgba(6,13,26,.6));
+      border:1px solid var(--glass-border);
+      padding:48px 40px;
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      min-height:350px;text-align:center;
+      position:relative;overflow:hidden
+    }
+    .about-visual::before{
+      content:'';position:absolute;inset:0;
+      background:radial-gradient(ellipse at 30% 40%,rgba(201,168,76,.06),transparent 60%)
+    }
+    .about-visual h3{font-family:'Tiro Devanagari Hindi',serif;font-size:24px;color:var(--white);position:relative;z-index:2}
+    .about-visual p{color:var(--gold);font-size:15px;position:relative;z-index:2}
+    .about-visual .big-icon{Vishnu font-size:64px;color:var(--gold);opacity:.5;margin-bottom:12px;position:relative;z-index:2}
+
+    /* why */
+    .why{background:var(--navy-2)}
+    .why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+    .why-item{
+      display:flex;align-items:flex-start;gap:16px;
+      padding:24px;border-radius:var(--radius-md);
+      background:var(--glass);border:1px solid var(--glass-border);
+      transition:all .35s var(--ease)
+    }
+    .why-item:hover{border-color:rgba(201,168,76,.2);transform:translateX(5px);background:var(--glass-2)}
+    .why-icon{
+      width:44px;height:44px;border-radius:12px;flex-shrink:0;
+      background:rgba(201,168,76,.1);
+      display:flex;align-items:center;justify-content:center;
+      font-size:19px;color:var(--gold)
+    }
+    .why-text h4{font-size:15px;color:var(--white);font-weight:600;margin-bottom:3px}
+    .why-text p{font-size:13px;color:var(--muted);margin:0;line-height:1.6}
+
+    /* contact */
+    .contact{background:var(--navy-2)}
+    .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+    .contact-info{display:flex;flex-direction:column;gap:16px}
+    .contact-card{
+      display:flex;align-items:flex-start;gap:16px;
+      padding:22px;border-radius:var(--radius-md);
+      background:var(--glass);border:1px solid var(--glass-border);
+      transition:all .3s
+    }
+    .contact-card:hover{border-color:rgba(201,168,76,.12)}
+    .contact-card i{
+      font-size:20px;color:var(--gold);
+      width:42px;height:42px;display:flex;align-items:center;justify-content:center;
+      border-radius:10px;background:rgba(201,168,76,.08);flex-shrink:0
+    }
+    .contact-card h4{font-size:15px;color:var(--white);margin-bottom:2px;font-weight:600}
+    .contact-card p{font-size:14px;color:var(--muted)}
+    .contact-form{
+      padding:36px;border-radius:var(--radius-lg);
+      background:var(--glass);border:1px solid var(--glass-border);
+      backdrop-filter:blur(20px)
+    }
+    .contact-form h3{
+      font-family:'Tiro Devanagari Hindi',serif;
+      font-size:22px;color:var(--white);margin-bottom:20px
+    }
+    .form-group{margin-bottom:16px}
+    .form-group input,.form-group select,.form-group textarea{
+      width:100%;padding:14px 18px;border-radius:10px;
+      background:rgba(255,255,255,.04);
+      border:1px solid var(--glass-border);
+      color:var(--white);font-size:14px;
+      font-family:'Inter',sans-serif;
+      transition:all .3s;outline:none
+    }
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{
+      border-color:rgba(201,168,76,.4);
+      background:rgba(201,168,76,.03);
+      box-shadow:0 0 0 3px rgba(201,168,76,.06)
+    }
+    .form-group textarea{height:100px;resize:vertical}
+    .form-group select option{background:var(--navy-2);color:var(--white)}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+
+    /* map */
+    .map-wrap{
+      margin-top:44px;border-radius:var(--radius-lg);
+      overflow:hidden;border:1px solid var(--glass-border);
+      height:260px
+    }
+    .map-wrap iframe{width:100%;height:100%;border:none}
+
+    /* footer */
+    .footer{
+      background:#040912;
+      padding:50px 0 0;
+      border-top:1px solid var(--glass-border)
+    }
+    .footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+    .footer-brand h3{
+      font-family:'Tiro Devanagari Hindi',serif;
+      font-size:20px;color:var(--white);margin-bottom:10px
+    }
+    .footer-brand h3 span{color:var(--gold)}
+    .footer-brand p{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:16px}
+    .footer-social{display:flex;gap:10px}
+    .footer-social a{
+      width:40px;height:40px;border-radius:10px;
+      background:var(--glass);border:1px solid var(--glass-border);
+      display:flex;align-items:center;justify-content:center;
+      color:var(--muted);font-size:15px;
+      transition:all .35s var(--ease)
+    }
+    .footer-social a:hover{
+      background:linear-gradient(135deg,var(--gold-3),var(--gold));
+      color:var(--navy);border-color:var(--gold);
+      transform:translateY(-3px)
+    }
+    .footer h4{font-size:15px;color:var(--white);font-weight:600;margin-bottom:16px}
+    .footer-links li{margin-bottom:10px}
+    .footer-links a{
+      font-size:14px;color:var(--muted);
+      transition:all .3s var(--ease);
+      display:flex;align-items:center;gap:8px
+    }
+    .footer-links a:hover{color:var(--gold);padding-left:5px}
+    .footer-contact li{
+      display:flex;gap:12px;margin-bottom:14px;
+      font-size:14px;color:var(--muted)
+    }
+    .footer-contact i{color:var(--gold);font-size:15px;margin-top:3px;flex-shrink:0}
+    .footer-bottom{
+      margin-top:40px;padding:20px 0;
+      border-top:1px solid var(--glass-border);
+      display:flex;justify-content:space-between;align-items:center;
+      flex-wrap:wrap;gap:12px;
+      font-size:13px;color:#5a6a80
+    }
+    .footer-bottom i{color:var(--gold);margin:0 3px}
+
+    /* floating */
+    .wa-float{
+      position:fixed;bottom:28px;right:28px;z-index:9995;
+      display:flex;align-items:center;gap:12px;text-decoration:none
+    }
+    .wa-float-tip{
+      background:var(--white);color:var(--navy);
+      padding:10px 18px;border-radius:12px;
+      font-size:13px;font-weight:600;
+      box-shadow:0 4px 20px rgba(0,0,0,.25);
+      opacity:0;transform:translateX(20px);
+      transition:all .4s var(--ease);
+      pointer-events:none;white-space:nowrap
+    }
+    .wa-float:hover .wa-float-tip{opacity:1;transform:translateX(0)}
+    .wa-float-btn{
+      width:58px;height:58px;border-radius:50%;
+      background:linear-gradient(135deg,#25D366,#1da851);
+      color:white;display:flex;align-items:center;justify-content:center;
+      font-size:30px;
+      box-shadow:0 6px 28px rgba(37,211,102,.4);
+      transition:all .35s var(--ease-bounce);
+      animation:waPulse 2.5s ease-in-out infinite;flex-shrink:0
+    }
+    .wa-float-btn:hover{transform:scale(1.1);box-shadow:0 8px 36px rgba(37,211,102,.5)}
+    @keyframes waPulse{
+      0%,100%{box-shadow:0 6px 28px rgba(37,211,102,.4)}
+      50%{box-shadow:0 6px 40px rgba(37,211,102,.7)}
+    }
+    .btt{
+      position:fixed;bottom:28px;left:28px;z-index:9995;
+      width:46px;height:46px;border-radius:50%;
+      background:linear-gradient(135deg,var(--gold-3),var(--gold));
+      color:var(--navy);display:flex;align-items:center;justify-content:center;
+      font-size:18px;cursor:pointer;border:none;
+      opacity:0;visibility:hidden;
+      transform:translateY(20px);
+      transition:all .4s var(--ease);
+      box-shadow:0 4px 20px rgba(201,168,76,.25)
+    }
+    .btt.show{opacity:1;visibility:visible;transform:translateY(0)}
+    .btt:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(201,168,76,.35)}
+
+    .ray-credit{
+      position:fixed;bottom:28px;left:50%;transform:translateX(-50%);
+      z-index:9994;text-align:center;pointer-events:none
+    }
+    .ray-credit a{
+      display:inline-flex;align-items:center;gap:6px;
+      padding:6px 14px;border-radius:20px;
+      background:rgba(6,13,26,.7);
+      backdrop-filter:blur(12px);
+      border:1px solid var(--glass-border);
+      font-size:11px;color:var(--muted);text-decoration:none;
+      pointer-events:auto;
+      transition:all .3s var(--ease)
+    }
+    .ray-credit a:hover{color:var(--gold);border-color:rgba(201,168,76,.3)}
+    .ray-credit a i{color:var(--gold);font-size:10px}
+
+    ::selection{background:rgba(201,168,76,.3);color:var(--white)}
+    ::-webkit-scrollbar{width:6px}
+    ::-webkit-scrollbar-track{background:var(--navy)}
+    ::-webkit-scrollbar-thumb{background:var(--gold-3);border-radius:4px}
+    ::-webkit-scrollbar-thumb:hover{background:var(--gold)}
+
+    @media(max-width:1024px){
+      .hero-services{grid-template-columns:1fr;gap:16px}
+      .hero-svc-list.right{text-align:left}
+      .hero-svc-list.right .hero-svc-item{flex-direction:row}
+      .hero-svc-list.right .hero-svc-item:hover{transform:translateX(4px)}
+      .about-grid{grid-template-columns:1fr;gap:40px}
+      .contact-wrap{grid-template-columns:1fr}
+    }
+    @media(max-width:768px){
+      .nav-links{
+        position:fixed;top:0;right:-100%;width:300px;height:100vh;
+        background:rgba(6,13,26,.97);
+        backdrop-filter:blur(32px);
+        flex-direction:column;padding:100px 28px 28px;gap:2px;
+        transition:right .45s var(--ease);
+        border-left:1px solid var(--glass-border);
+        z-index:9998;align-items:stretch
+      }
+      .nav-links.open{right:0}
+      .nav-links a{font-size:17px;padding:14px 18px;border-radius:10px}
+      .nav-links a::after{display:none}
+      .nav-cta{margin-left:0;margin-top:10px;text-align:center;padding:14px!important}
+      .nav-toggle{display:flex}
+      section{padding:64px 0}
+      .hero h1{font-size:30px}
+      .hero-services{gap:12px}
+      .hero-svc-item{font-size:14px;padding:12px 16px}
+      .hero-center h2{font-size:18px}
+      .form-row{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr}
+      .ray-credit{bottom:16px}
+      .ray-credit a{font-size:10px;padding:4px 12px}
+    }
+    @media(max-width:480px){
+      .hero h1{font-size:26px}
+      .hero .sub-text{font-size:15px}
+      .btn{padding:13px 22px;font-size:14px}
+      .contact-form{padding:24px}
+      .wa-float{right:16px;bottom:16px}
+      .wa-float-btn{width:52px;height:52px;font-size:26px}
+      .btt{left:16px;bottom:16px}
+      .ray-credit{bottom:80px;left:auto;right:16px;transform:none}
+    }
+  </style>
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader-symbol"><div class="loader-ring"></div><div class="loader-ring"></div></div>
+  <div class="loader-text">निधि फाइनेंस</div>
+  <div class="loader-bar"><div class="loader-bar-inner"></div></div>
+</div>
+
+<div id="scrollProgress"></div>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- NAV -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#home" class="nav-logo">निधि <span>फाइनेंस</span> सर्विस</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="active">होम</a>
+      <a href="#about">हमारे बारे में</a>
+      <a href="#services">सेवाएं</a>
+      <a href="#contact">संपर्क</a>
+      <a href="tel:8899656327" class="nav-cta"><i class="fas fa-phone"></i> कॉल करें</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-canvas">
+    <div class="hero-glow"></div><div class="hero-glow"></div><div class="hero-glow"></div>
+    <div class="hero-dots"></div>
+  </div>
+  <div class="container">
+    <div class="hero-badge"><i class="fas fa-shield-alt"></i> विश्वसनीय वित्त भागीदार</div>
+    <h1><span class="glow-text">निधि फाइनेंस सर्विस</span></h1>
+    <p class="sub-text">आपकी हर वित्तीय ज़रूरत का एकमात्र समाधान</p>
+
+    <div class="hero-services">
+      <div class="hero-svc-list">
+        <div class="hero-svc-item"><i class="fas fa-home"></i> होम लोन</div>
+        <div class="hero-svc-item"><i class="fas fa-warehouse"></i> मॉर्गेज लोन</div>
+        <div class="hero-svc-item"><i class="fas fa-square"></i> प्लॉट लोन</div>
+        <div class="hero-svc-item"><i class="fas fa-hard-hat"></i> कंस्ट्रक्शन लोन</div>
+        <div class="hero-svc-item"><i class="fas fa-industry"></i> प्रोजेक्ट लोन</div>
+      </div>
+
+      <div class="hero-center">
+        <div class="big-icon"><i class="fas fa-building-columns"></i></div>
+        <h2>सभी बैंकों द्वारा<br>सभी प्रकार के लोन<br>की सुविधा उपलब्ध</h2>
+        <span class="highlight-line">हर लोन, एक ही जगह</span>
+      </div>
+
+      <div class="hero-svc-list right">
+        <div class="hero-svc-item"><i class="fas fa-layer-group"></i> प्लॉट + कंस्ट्रक्शन</div>
+        <div class="hero-svc-item"><i class="fas fa-user"></i> पर्सनल लोन</div>
+        <div class="hero-svc-item"><i class="fas fa-briefcase"></i> बिजनेस लोन</div>
+        <div class="hero-svc-item"><i class="fas fa-credit-card"></i> सीसी लिमिट</div>
+        <div class="hero-svc-item"><i class="fas fa-car"></i> वाहन लोन</div>
+      </div>
+    </div>
+
+    <div class="hero-btns">
+      <a href="tel:8899656327" class="btn btn-primary"><i class="fas fa-phone"></i> अभी कॉल करें</a>
+      <a href="https://wa.me/918899656327?text=नमस्ते%20निधि%20फाइनेंस,%20मुझे%20लोन%20सहायता%20चाहिए" target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> व्हाट्सएप</a>
+      <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> संपर्क करें</a>
+    </div>
+
+    <div class="hero-contact">
+      <a href="tel:8899656327"><i class="fas fa-phone-alt"></i> शुभम वर्मा : 88996 56327</a>
+      <a href="#map"><i class="fas fa-map-marker-alt"></i> भाटागाँव, रायपुर</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="section-label"><i class="fas fa-info-circle"></i> हमारे बारे में</div>
+        <h2 class="section-title">आपका विश्वसनीय वित्त साथी</h2>
+        <p style="color:var(--muted-2);font-size:15px;margin-bottom:20px;line-height:1.7">निधि फाइनेंस सर्विस आपको सभी सरकारी एवं निजी बैंकों के माध्यम से हर प्रकार के लोन की सुविधा प्रदान करता है। चाहे आपको घर बनाना हो, व्यवसाय शुरू करना हो, या कोई अन्य ज़रूरत हो — हम आपके लिए सबसे अच्छा विकल्प लेकर आते हैं।</p>
+        <p style="color:var(--muted);font-size:14px;margin-bottom:24px">हमारी टीम आपको न्यूनतम दस्तावेज़, त्वरित प्रक्रिया और पेशेवर सलाह प्रदान करती है। बैंकों की भागदौड़ से बचें और एक ही जगह पर सभी लोन विकल्प पाएं।</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <span style="padding:8px 18px;border-radius:20px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.12);color:var(--gold);font-size:12px;font-weight:600;"><i class="fas fa-check-circle"></i> त्वरित स्वीकृति</span>
+          <span style="padding:8px 18px;border-radius:20px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.12);color:var(--gold);font-size:12px;font-weight:600;"><i class="fas fa-check-circle"></i> कम ब्याज दर</span>
+          <span style="padding:8px 18px;border-radius:20px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.12);color:var(--gold);font-size:12px;font-weight:600;"><i class="fas fa-check-circle"></i> सभी बैंकों द्वारा</span>
+        </div>
+      </div>
+      <div class="about-visual reveal-s" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80');background-size:cover;background-position:center;">
+        <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(6,13,26,.85),rgba(6,13,26,.5));border-radius:inherit;z-index:1;"></div>
+        <div style="position:relative;z-index:2">
+          <div style="font-size:64px;color:var(--gold);opacity:.5;margin-bottom:12px;"><i class="fas fa-building-columns"></i></div>
+          <h3>निधि फाइनेंस सर्विस</h3>
+          <p>सभी बैंकों द्वारा सभी प्रकार के लोन</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="services">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label"><i class="fas fa-star"></i> हमारी सेवाएं</div>
+      <h2 class="section-title">हम क्यों चुनें?</h2>
+      <p class="section-sub">हम आपको सबसे अच्छी ब्याज दरों पर सभी प्रकार के लोन दिलाने में मदद करते हैं।</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-home"></i></div><div class="why-text"><h4>होम लोन</h4><p>कम ब्याज दरों पर अपने सपनों का घर बनाएं। लंबी अवधि और आसान EMI।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-warehouse"></i></div><div class="why-text"><h4>मॉर्गेज लोन</h4><p>अपनी संपत्ति के मूल्य को अनलॉक करें। सबसे कम ब्याज दरों पर लोन।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-square"></i></div><div class="why-text"><h4>प्लॉट लोन</h4><p>जमीन खरीदने के लिए आसान फाइनेंस। सरल दस्तावेज़ीकरण प्रक्रिया।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-hard-hat"></i></div><div class="why-text"><h4>कंस्ट्रक्शन लोन</h4><p>निर्माण कार्य के लिए वित्तीय सहायता। निर्माण प्रगति के अनुसार भुगतान।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-industry"></i></div><div class="why-text"><h4>प्रोजेक्ट लोन</h4><p>नए व्यवसाय या औद्योगिक परियोजनाओं के लिए फंडिंग।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-layer-group"></i></div><div class="why-text"><h4>प्लॉट + कंस्ट्रक्शन</h4><p>जमीन और निर्माण दोनों के लिए एक साथ लोन। एक ही आवेदन में दोनों।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-user"></i></div><div class="why-text"><h4>पर्सनल लोन</h4><p>व्यक्तिगत ज़रूरतों के लिए तत्काल लोन। बिना किसी गारंटी के।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-briefcase"></i></div><div class="why-text"><h4>बिजनेस लोन</h4><p>अपने व्यवसाय को बढ़ाने के लिए कार्यशील पूंजी और विस्तार लोन।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-credit-card"></i></div><div class="why-text"><h4>सीसी लिमिट</h4><p>व्यवसाय के लिए कैश क्रेडिट सुविधा। उपयोग की गई राशि पर ही ब्याज।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-car"></i></div><div class="why-text"><h4>वाहन लोन</h4><p>कार, बाइक या व्यावसायिक वाहन के लिए आसान फाइनेंस। त्वरित स्वीकृति।</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label"><i class="fas fa-envelope"></i> संपर्क</div>
+      <h2 class="section-title">हमसे संपर्क करें</h2>
+      <p class="section-sub">लोन के लिए आज ही संपर्क करें। मुफ्त परामर्श और पात्रता जांच।</p>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-info reveal">
+        <div class="contact-card">
+          <i class="fas fa-user"></i>
+          <div><h4>संपर्क व्यक्ति</h4><p style="font-weight:600;color:var(--white)">शुभम वर्मा</p></div>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-phone-alt"></i>
+          <div><h4>फोन नंबर</h4><p><a href="tel:8899656327" style="color:var(--gold);font-weight:600;font-size:18px;">88996 56327</a></p></div>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <div><h4>कार्यालय का पता</h4><p>Near Ankalu Pal Palace, Bhatagaon Chowk, Jalgrih Marg, Bhatagaon, Raipur, Chhattisgarh - 492013</p></div>
+        </div>
+        <a href="https://wa.me/918899656327?text=नमस्ते%20निधि%20फाइनेंस,%20मुझे%20लोन%20सहायता%20चाहिए" target="_blank" rel="noopener" class="btn btn-whatsapp" style="justify-content:center;padding:16px"><i class="fab fa-whatsapp"></i> व्हाट्सएप पर चैट करें</a>
+        <a href="tel:8899656327" class="btn btn-primary" style="justify-content:center;padding:16px"><i class="fas fa-phone"></i> अभी कॉल करें</a>
+      </div>
+      <div class="contact-form reveal-s">
+        <h3>लोन के लिए आवेदन करें</h3>
+        <form onsubmit="event.preventDefault();var m=document.createElement('div');m.style.cssText='padding:16px;background:rgba(201,168,76,.1);border-radius:10px;color:var(--gold);margin-top:16px;text-align:center;font-size:14px';m.textContent='आपके आवेदन के लिए धन्यवाद! हम शीघ्र ही आपसे संपर्क करेंगे।';this.replaceWith(m);">
+          <div class="form-row">
+            <div class="form-group"><input type="text" name="full_name" placeholder="पूरा नाम *" required></div>
+            <div class="form-group"><input type="tel" name="mobile" pattern="[6-9]\d{9}" title="कृपया 10 अंकों का मोबाइल नंबर दर्ज करें" placeholder="मोबाइल नंबर *" required></div>
+          </div>
+          <div class="form-group">
+            <select name="loan_type" required>
+              <option value="">लोन प्रकार चुनें *</option>
+              <option>होम लोन</option>
+              <option>मॉर्गेज लोन</option>
+              <option>प्लॉट लोन</option>
+              <option>कंस्ट्रक्शन लोन</option>
+              <option>प्रोजेक्ट लोन</option>
+              <option>प्लॉट + कंस्ट्रक्शन</option>
+              <option>पर्सनल लोन</option>
+              <option>बिजनेस लोन</option>
+              <option>सीसी लिमिट</option>
+              <option>वाहन लोन</option>
+            </select>
+          </div>
+          <div class="form-group"><textarea name="message" placeholder="संदेश (वैकल्पिक)"></textarea></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:16px"><i class="fas fa-paper-plane"></i> आवेदन जमा करें</button>
+        </form>
+      </div>
+    </div>
+    <div class="map-wrap reveal" id="map">
+      <iframe title="निधि फाइनेंस, भाटागाँव रायपुर" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14876.448542746!2d81.603!3d21.241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dd1e2b1b2b2b%3A0x7b2b2b2b2b2b2b!2sBhatagaon%2C+Raipur%2C+Chhattisgarh!5e0!3m2!1sen!2sin!4v1" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>निधि <span>फाइनेंस</span> सर्विस</h3>
+        <p>सभी बैंकों द्वारा सभी प्रकार के लोन की सुविधा। त्वरित प्रक्रिया, न्यूनतम दस्तावेज़ और पेशेवर सलाह।</p>
+        <div class="footer-social">
+          <a href="https://facebook.com/nidhifinance" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/nidhifinance" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/918899656327" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>संपर्क जानकारी</h4>
+        <ul class="footer-contact">
+          <li><i class="fas fa-user"></i> शुभम वर्मा</li>
+          <li><i class="fas fa-phone-alt"></i> <a href="tel:8899656327" style="color:var(--muted)">88996 56327</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> Near Ankalu Pal Palace, Bhatagaon Chowk, Jalgrih Marg, Bhatagaon, Raipur, Chhattisgarh - 492013</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 निधि फाइनेंस सर्विस. सर्वाधिकार सुरक्षित। All Rights Reserved.</span>
+      <span>Website Designed by <a href="https://raywebservices.netlify.app/" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600;">Ray Services</a> <a href="tel:7746969000" style="color:var(--muted);">7746969000</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING -->
+<a href="https://wa.me/918899656327?text=नमस्ते%20निधि%20फाइनेंस,%20मुझे%20लोन%20सहायता%20चाहिए" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
+  <span class="wa-float-tip">हमसे चैट करें</span>
+  <span class="wa-float-btn"><i class="fab fa-whatsapp"></i></span>
+</a>
+
+<button class="btt" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<div class="ray-credit">
+  <a href="https://raywebservices.netlify.app/" target="_blank" rel="noopener" title="Website Designed by Ray Services">
+    <i class="fas fa-code"></i> Ray Services <span style="color:var(--muted);font-weight:400;">7746969000</span>
+  </a>
+</div>
+
+<script>
+window.addEventListener('load',()=>{setTimeout(()=>{document.getElementById('preloader').classList.add('hide')},400)});
+const sp=document.getElementById('scrollProgress');
+window.addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-window.innerHeight;sp.style.width=(window.scrollY/h*100)+'%'});
+const navbar=document.getElementById('navbar');
+const navToggle=document.getElementById('navToggle');
+const navLinks=document.getElementById('navLinks');
+const navOverlay=document.getElementById('navOverlay');
+window.addEventListener('scroll',()=>{navbar.classList.toggle('scrolled',window.scrollY>60);document.getElementById('backToTop').classList.toggle('show',window.scrollY>500)});
+function closeNav(){navToggle.classList.remove('active');navLinks.classList.remove('open');navOverlay.classList.remove('open');document.body.style.overflow=''}
+navToggle.addEventListener('click',()=>{navToggle.classList.toggle('active');navLinks.classList.toggle('open');navOverlay.classList.toggle('open');document.body.style.overflow=navLinks.classList.contains('open')?'hidden':''});
+navOverlay.addEventListener('click',closeNav);
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',closeNav));
+const sections=document.querySelectorAll('section[id]');
+window.addEventListener('scroll',()=>{let c='';sections.forEach(s=>{const t=s.offsetTop-120;if(window.scrollY>=t)c=s.getAttribute('id')});document.querySelectorAll('.nav-links a:not(.nav-cta)').forEach(a=>{a.classList.toggle('active',a.getAttribute('href')==='#'+c)})});
+const ro=new IntersectionObserver(e=>{e.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')})},{threshold:.08});
+document.querySelectorAll('.reveal,.reveal-s').forEach(el=>ro.observe(el));
+</script>
+</body>
+</html>
