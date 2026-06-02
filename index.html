@@ -123,7 +123,12 @@
       font-size:22px;font-weight:700;
       color:var(--white)
     }
+    .nav-logo .logo-svg{width:38px;height:38px;flex-shrink:0}
     .nav-logo span{color:var(--gold)}
+    .logo-svg-circle{fill:url(#goldGradient)}
+    .logo-svg-text{fill:#060d1a;font-weight:800;font-size:12px;font-family:sans-serif}
+    .about-logo-svg{width:80px;height:80px;margin-bottom:12px;position:relative;z-index:2}
+    .footer-logo-svg{width:42px;height:42px;flex-shrink:0}
     .nav-links{display:flex;align-items:center;gap:4px}
     .nav-links a{
       padding:8px 18px;border-radius:8px;
@@ -648,7 +653,30 @@
 <!-- NAV -->
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="#home" class="nav-logo">निधि <span>फाइनेंस</span> सर्विस</a>
+    <a href="#home" class="nav-logo">
+      <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F2D48A"/>
+            <stop offset="50%" stop-color="#C9A84C"/>
+            <stop offset="100%" stop-color="#A8852E"/>
+          </linearGradient>
+          <linearGradient id="goldGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F2D48A"/>
+            <stop offset="100%" stop-color="#D4B05A"/>
+          </linearGradient>
+        </defs>
+        <circle cx="50" cy="50" r="46" fill="none" stroke="url(#goldGradient)" stroke-width="4"/>
+        <circle cx="50" cy="50" r="42" fill="#060d1a"/>
+        <rect x="34" y="38" width="32" height="38" rx="3" fill="url(#goldGradient2)" opacity=".95"/>
+        <rect x="40" y="44" width="6" height="10" rx="1.5" fill="#060d1a" opacity=".7"/>
+        <rect x="54" y="44" width="6" height="10" rx="1.5" fill="#060d1a" opacity=".7"/>
+        <rect x="38" y="62" width="24" height="4" rx="1.5" fill="#060d1a" opacity=".6"/>
+        <rect x="35" y="34" width="30" height="6" rx="2" fill="url(#goldGradient2)"/>
+        <rect x="47" y="30" width="6" height="7" rx="1" fill="url(#goldGradient2)"/>
+      </svg>
+      निधि <span>फाइनेंस</span> सर्विस
+    </a>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -728,7 +756,27 @@
       <div class="about-visual reveal-s" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80');background-size:cover;background-position:center;">
         <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(6,13,26,.85),rgba(6,13,26,.5));border-radius:inherit;z-index:1;"></div>
         <div style="position:relative;z-index:2">
-          <div style="font-size:64px;color:var(--gold);opacity:.5;margin-bottom:12px;"><i class="fas fa-building-columns"></i></div>
+          <svg class="about-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="goldGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F2D48A"/>
+                <stop offset="100%" stop-color="#D4B05A"/>
+              </linearGradient>
+              <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F2D48A"/>
+                <stop offset="50%" stop-color="#C9A84C"/>
+                <stop offset="100%" stop-color="#A8852E"/>
+              </linearGradient>
+            </defs>
+            <circle cx="50" cy="50" r="46" fill="none" stroke="url(#goldGradient)" stroke-width="4"/>
+            <circle cx="50" cy="50" r="42" fill="#060d1a"/>
+            <rect x="34" y="38" width="32" height="38" rx="3" fill="url(#goldGradient2)" opacity=".95"/>
+            <rect x="40" y="44" width="6" height="10" rx="1.5" fill="#060d1a" opacity=".7"/>
+            <rect x="54" y="44" width="6" height="10" rx="1.5" fill="#060d1a" opacity=".7"/>
+            <rect x="38" y="62" width="24" height="4" rx="1.5" fill="#060d1a" opacity=".6"/>
+            <rect x="35" y="34" width="30" height="6" rx="2" fill="url(#goldGradient2)"/>
+            <rect x="47" y="30" width="6" height="7" rx="1" fill="url(#goldGradient2)"/>
+          </svg>
           <h3>निधि फाइनेंस सर्विस</h3>
           <p>सभी बैंकों द्वारा सभी प्रकार के लोन</p>
         </div>
@@ -823,7 +871,30 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <h3>निधि <span>फाइनेंस</span> सर्विस</h3>
+        <h3 style="display:flex;align-items:center;gap:10px;">
+          <svg class="footer-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="goldGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F2D48A"/>
+                <stop offset="100%" stop-color="#D4B05A"/>
+              </linearGradient>
+              <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F2D48A"/>
+                <stop offset="50%" stop-color="#C9A84C"/>
+                <stop offset="100%" stop-color="#A8852E"/>
+              </linearGradient>
+            </defs>
+            <circle cx="50" cy="50" r="46" fill="none" stroke="url(#goldGradient)" stroke-width="4"/>
+            <circle cx="50" cy="50" r="42" fill="#060d1a"/>
+            <rect x="34" y="38" width="32" height="38" rx="3" fill="url(#goldGradient2)" opacity=".95"/>
+            <rect x="40" y="44" width="6" height="10" rx="1.5" fill="#060d1a" opacity=".7"/>
+            <rect x="54" y="44" width="6" height="10" rx="1.5" fill="#060d1a" opacity=".7"/>
+            <rect x="38" y="62" width="24" height="4" rx="1.5" fill="#060d1a" opacity=".6"/>
+            <rect x="35" y="34" width="30" height="6" rx="2" fill="url(#goldGradient2)"/>
+            <rect x="47" y="30" width="6" height="7" rx="1" fill="url(#goldGradient2)"/>
+          </svg>
+          निधि <span>फाइनेंस</span> सर्विस
+        </h3>
         <p>सभी बैंकों द्वारा सभी प्रकार के लोन की सुविधा। त्वरित प्रक्रिया, न्यूनतम दस्तावेज़ और पेशेवर सलाह।</p>
         <div class="footer-social">
           <a href="https://facebook.com/nidhifinance" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
