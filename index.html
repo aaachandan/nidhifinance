@@ -173,6 +173,7 @@
       position:fixed;inset:0;z-index:9996;
       background:rgba(0,0,0,.6);
       backdrop-filter:blur(4px);
+      -webkit-backdrop-filter:blur(4px);
       opacity:0;visibility:hidden;
       transition:all .4s var(--ease)
     }
@@ -227,7 +228,7 @@
       border:1px solid rgba(201,168,76,.2);
       font-size:12px;color:var(--gold-2);font-weight:500;
       margin-bottom:28px;
-      animation:fadeSlideUp .6s .15s var(--ease) forwards
+      animation:fadeSlideUp .6s .15s var(--ease) both
     }
     .hero h1{
       font-family:'Tiro Devanagari Hindi',serif;
@@ -235,7 +236,7 @@
       line-height:1.15;
       color:var(--white);
       margin-bottom:12px;
-      animation:fadeSlideUp .6s .25s var(--ease) forwards
+      animation:fadeSlideUp .6s .25s var(--ease) both
     }
     .hero h1 .glow-text{
       background:linear-gradient(135deg,var(--gold),var(--gold-2),var(--gold-light));
@@ -244,9 +245,9 @@
     .hero .sub-text{
       font-size:18px;color:var(--muted-2);
       margin-bottom:32px;
-      animation:fadeSlideUp .6s .35s var(--ease) forwards
+      animation:fadeSlideUp .6s .35s var(--ease) both
     }
-    @keyframes fadeSlideUp{to{transform:translateY(0);opacity:1}}
+    @keyframes fadeSlideUp{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
 
     /* services layout */
     .hero-services{
@@ -255,7 +256,7 @@
       gap:20px;
       align-items:center;
       margin-bottom:36px;
-      animation:fadeSlideUp .6s .45s var(--ease) forwards
+      animation:fadeSlideUp .6s .45s var(--ease) both
     }
     .hero-svc-list{
       display:flex;flex-direction:column;gap:10px
@@ -266,6 +267,7 @@
       padding:14px 20px;border-radius:12px;
       background:var(--glass);
       backdrop-filter:blur(12px);
+      -webkit-backdrop-filter:blur(12px);
       border:1px solid var(--glass-border);
       transition:all .3s var(--ease);
       font-size:16px;font-weight:600;color:var(--white)
@@ -311,7 +313,7 @@
     .hero-btns{
       display:flex;flex-wrap:wrap;gap:12px;justify-content:center;
       margin-bottom:24px;
-      animation:fadeSlideUp .6s .55s var(--ease) forwards
+      animation:fadeSlideUp .6s .55s var(--ease) both
     }
     .btn{
       display:inline-flex;align-items:center;gap:10px;
@@ -337,7 +339,8 @@
       background:var(--glass-2);
       color:var(--white);
       border:1px solid var(--glass-border-2);
-      backdrop-filter:blur(10px)
+      backdrop-filter:blur(10px);
+      -webkit-backdrop-filter:blur(10px)
     }
     .btn-secondary:hover{background:rgba(255,255,255,.1);transform:translateY(-3px)}
     .btn-whatsapp{background:#25D366;color:white;box-shadow:0 4px 20px rgba(37,211,102,.3)}
@@ -345,7 +348,7 @@
 
     .hero-contact{
       display:flex;justify-content:center;gap:24px;flex-wrap:wrap;
-      animation:fadeSlideUp .6s .65s var(--ease) forwards
+      animation:fadeSlideUp .6s .65s var(--ease) both
     }
     .hero-contact a{
       display:flex;align-items:center;gap:10px;
@@ -406,7 +409,7 @@
     }
     .about-visual h3{font-family:'Tiro Devanagari Hindi',serif;font-size:24px;color:var(--white);position:relative;z-index:2}
     .about-visual p{color:var(--gold);font-size:15px;position:relative;z-index:2}
-    .about-visual .big-icon{Vishnu font-size:64px;color:var(--gold);opacity:.5;margin-bottom:12px;position:relative;z-index:2}
+    .about-visual .big-icon{font-size:64px;color:var(--gold);opacity:.5;margin-bottom:12px;position:relative;z-index:2}
 
     /* why */
     .why{background:var(--navy-2)}
@@ -448,7 +451,8 @@
     .contact-form{
       padding:36px;border-radius:var(--radius-lg);
       background:var(--glass);border:1px solid var(--glass-border);
-      backdrop-filter:blur(20px)
+      backdrop-filter:blur(20px);
+      -webkit-backdrop-filter:blur(20px)
     }
     .contact-form h3{
       font-family:'Tiro Devanagari Hindi',serif;
@@ -580,6 +584,7 @@
       padding:6px 14px;border-radius:20px;
       background:rgba(6,13,26,.7);
       backdrop-filter:blur(12px);
+      -webkit-backdrop-filter:blur(12px);
       border:1px solid var(--glass-border);
       font-size:11px;color:var(--muted);text-decoration:none;
       pointer-events:auto;
@@ -607,6 +612,7 @@
         position:fixed;top:0;right:-100%;width:300px;height:100vh;
         background:rgba(6,13,26,.97);
         backdrop-filter:blur(32px);
+        -webkit-backdrop-filter:blur(32px);
         flex-direction:column;padding:100px 28px 28px;gap:2px;
         transition:right .45s var(--ease);
         border-left:1px solid var(--glass-border);
@@ -701,7 +707,7 @@
 <nav class="navbar" id="navbar">
   <div class="container">
     <a href="#home" class="nav-logo">
-      <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="निधि फाइनेंस सर्विस">
         <defs>
           <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stop-color="#F2D48A"/>
@@ -803,7 +809,7 @@
       <div class="about-visual reveal-s" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80');background-size:cover;background-position:center;">
         <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(6,13,26,.85),rgba(6,13,26,.5));border-radius:inherit;z-index:1;"></div>
         <div style="position:relative;z-index:2">
-          <svg class="about-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <svg class="about-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="निधि फाइनेंस सर्विस">
             <defs>
               <linearGradient id="goldGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stop-color="#F2D48A"/>
@@ -884,11 +890,11 @@
         <h3>लोन के लिए आवेदन करें</h3>
         <form onsubmit="event.preventDefault();var m=document.createElement('div');m.style.cssText='padding:16px;background:rgba(201,168,76,.1);border-radius:10px;color:var(--gold);margin-top:16px;text-align:center;font-size:14px';m.textContent='आपके आवेदन के लिए धन्यवाद! हम शीघ्र ही आपसे संपर्क करेंगे।';this.replaceWith(m);">
           <div class="form-row">
-            <div class="form-group"><input type="text" name="full_name" placeholder="पूरा नाम *" required></div>
-            <div class="form-group"><input type="tel" name="mobile" pattern="[6-9]\d{9}" title="कृपया 10 अंकों का मोबाइल नंबर दर्ज करें" placeholder="मोबाइल नंबर *" required></div>
+            <div class="form-group"><input type="text" name="full_name" placeholder="पूरा नाम *" required aria-label="पूरा नाम"></div>
+            <div class="form-group"><input type="tel" name="mobile" pattern="[6-9]\d{9}" title="कृपया 10 अंकों का मोबाइल नंबर दर्ज करें" placeholder="मोबाइल नंबर *" required aria-label="मोबाइल नंबर"></div>
           </div>
           <div class="form-group">
-            <select name="loan_type" required>
+            <select name="loan_type" required aria-label="लोन प्रकार">
               <option value="">लोन प्रकार चुनें *</option>
               <option>होम लोन</option>
               <option>मॉर्गेज लोन</option>
@@ -902,7 +908,7 @@
               <option>वाहन लोन</option>
             </select>
           </div>
-          <div class="form-group"><textarea name="message" placeholder="संदेश (वैकल्पिक)"></textarea></div>
+          <div class="form-group"><textarea name="message" placeholder="संदेश (वैकल्पिक)" aria-label="संदेश"></textarea></div>
           <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:16px"><i class="fas fa-paper-plane"></i> आवेदन जमा करें</button>
         </form>
       </div>
@@ -919,7 +925,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <h3 style="display:flex;align-items:center;gap:10px;">
-          <svg class="footer-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <svg class="footer-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="निधि फाइनेंस सर्विस">
             <defs>
               <linearGradient id="goldGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stop-color="#F2D48A"/>
@@ -944,9 +950,9 @@
         </h3>
         <p>सभी बैंकों द्वारा सभी प्रकार के लोन की सुविधा। त्वरित प्रक्रिया, न्यूनतम दस्तावेज़ और पेशेवर सलाह।</p>
         <div class="footer-social">
-          <a href="https://facebook.com/nidhifinance" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://instagram.com/nidhifinance" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://wa.me/918899656327" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://facebook.com/nidhifinance" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/nidhifinance" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/918899656327" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
       <div>
@@ -983,19 +989,25 @@
 
 <script>
 window.addEventListener('load',()=>{setTimeout(()=>{document.getElementById('preloader').classList.add('hide')},400)});
-const sp=document.getElementById('scrollProgress');
-window.addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-window.innerHeight;sp.style.width=(window.scrollY/h*100)+'%'});
 const navbar=document.getElementById('navbar');
 const navToggle=document.getElementById('navToggle');
 const navLinks=document.getElementById('navLinks');
 const navOverlay=document.getElementById('navOverlay');
-window.addEventListener('scroll',()=>{navbar.classList.toggle('scrolled',window.scrollY>60);document.getElementById('backToTop').classList.toggle('show',window.scrollY>500)});
+const sp=document.getElementById('scrollProgress');
+const backToTop=document.getElementById('backToTop');
+const sections=document.querySelectorAll('section[id]');
+window.addEventListener('scroll',()=>{
+  const h=document.documentElement.scrollHeight-window.innerHeight;
+  if(h>0)sp.style.width=(window.scrollY/h*100)+'%';
+  navbar.classList.toggle('scrolled',window.scrollY>60);
+  backToTop.classList.toggle('show',window.scrollY>500);
+  let c='';sections.forEach(s=>{const t=s.offsetTop-120;if(window.scrollY>=t)c=s.getAttribute('id')});
+  document.querySelectorAll('.nav-links a:not(.nav-cta)').forEach(a=>{a.classList.toggle('active',a.getAttribute('href')==='#'+c)})
+});
 function closeNav(){navToggle.classList.remove('active');navLinks.classList.remove('open');navOverlay.classList.remove('open');document.body.style.overflow=''}
 navToggle.addEventListener('click',()=>{navToggle.classList.toggle('active');navLinks.classList.toggle('open');navOverlay.classList.toggle('open');document.body.style.overflow=navLinks.classList.contains('open')?'hidden':''});
 navOverlay.addEventListener('click',closeNav);
 document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',closeNav));
-const sections=document.querySelectorAll('section[id]');
-window.addEventListener('scroll',()=>{let c='';sections.forEach(s=>{const t=s.offsetTop-120;if(window.scrollY>=t)c=s.getAttribute('id')});document.querySelectorAll('.nav-links a:not(.nav-cta)').forEach(a=>{a.classList.toggle('active',a.getAttribute('href')==='#'+c)})});
 const ro=new IntersectionObserver(e=>{e.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')})},{threshold:.08});
 document.querySelectorAll('.reveal,.reveal-s').forEach(el=>ro.observe(el));
 </script>
